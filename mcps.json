@@ -1,0 +1,37 @@
+{
+  "mcpServers": {
+    "StitchMCP": {
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://stitch.googleapis.com/mcp",
+        "--header",
+        "X-Goog-Api-Key: [GCP_API_KEY]"
+      ],
+      "command": "npx",
+      "disabled": true
+    },
+    "docs-langchain": {
+      "disabled": true,
+      "serverUrl": "https://docs.langchain.com/mcp"
+    },
+    "gmp-code-assist": {
+      "args": [
+        "-y",
+        "@googlemaps/code-assist-mcp@latest"
+      ],
+      "command": "npx",
+      "disabled": true,
+      "env": {
+        "SOURCE": "antigravity"
+      }
+    },
+    "sequential-thinking": {
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ],
+      "command": "npx"
+    }
+  }
+}
